@@ -239,7 +239,7 @@ function App() {
     const [randomQuoteString, setRandomQuote] = useState(randomQuote)
     const [randomAuthorString, setRandomAuthor] = useState(randomAuthor)
 
-    const randomQuotes = (event) =>{
+    const randomQuotes = () =>{
         randomNumber = Math.floor(Math.random() * (quotes.length - 1));
         setRandomQuote(quotes[randomNumber].quote)
         setRandomAuthor(quotes[randomNumber].author)
